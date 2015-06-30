@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,13 +20,31 @@
         android:textSize="16sp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
+        android:textColor="@android:color/black"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="$0"/>
+
 
     <Button
         android:id="@+id/button_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/order"/>
+        android:text="@string/order"
+        android:onClick="submitOrder"/>
 
 
 </LinearLayout>
