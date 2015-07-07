@@ -11,30 +11,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Quantity" />
-    <Button
-        android:id="@+id/increment_button"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:text="+"
-        android:onClick="increment"/>
 
-    <TextView
-        android:id="@+id/quantity_text_view"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2"
-        android:textSize="16sp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:textColor="@android:color/black"
-        />
+        android:paddingTop="16dp">
 
-    <Button
-        android:id="@+id/decrement_button"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:text="-"
-        android:onClick="decrement"/>
+        <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:text="-"
+            android:onClick="decrement"/>
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="8sp"
+            android:paddingRight="8dp"
+            android:paddingLeft="16dp"
+            android:textColor="@android:color/black"
+            />
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:text="+"
+            android:onClick="increment"/>
+    </LinearLayout>
+
+
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
